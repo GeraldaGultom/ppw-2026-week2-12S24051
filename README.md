@@ -21,7 +21,7 @@ yang accessible, dibangun dengan HTML5 semantik dan CSS3 modern.
 2. Buka `index.html` di browser (atau gunakan ekstensi Live Server di VS Code)
 
 ## Live Demo
-[Isi link GitHub Pages di sini setelah deploy]
+https://geraldagultom.github.io/ppw-2026-week2-12S24051/ 
 
 ## Screenshot
 [Tempel screenshot halaman di sini]
