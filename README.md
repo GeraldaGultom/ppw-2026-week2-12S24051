@@ -24,4 +24,4 @@ yang accessible, dibangun dengan HTML5 semantik dan CSS3 modern.
 https://geraldagultom.github.io/ppw-2026-week2-12S24051/ 
 
 ## Screenshot
-[Tempel screenshot halaman di sini]
+<img width="1920" height="1080" alt="Screenshot (1110)" src="https://github.com/user-attachments/assets/718aa5af-ec18-4484-b07b-cb8826e86247" />
