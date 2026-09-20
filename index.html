@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geralda Natali Gultom — Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="logo">Geralda<span>.dev</span></div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#layanan">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <!-- ================= SECTION 1: TENTANG SAYA ================= -->
+    <section id="tentang" class="section section-about">
+
+      <!-- KARTU FOTO PROFIL (gaya Lab 1, warna disamakan) -->
+      <div class="about-photo">
+        <div class="photo-banner"></div>
+        <div class="avatar-wrap">
+          <img src="foto-profil.jpg" alt="Foto Geralda Natali Gultom" class="avatar-img">
+          <span class="status-badge">Aktif</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p class="eyebrow">Mahasiswa S1 Sistem Informasi</p>
+        <h1>Halo, saya Geralda Natali Gultom</h1>
+        <p class="lead">
+          Saya mahasiswa Sistem Informasi dengan ketertarikan besar pada software engineering
+          dan data analytics. Saya senang mengubah data mentah menjadi insight yang berguna,
+          dan mengubah kebutuhan pengguna menjadi produk digital yang benar-benar terpakai.
+        </p>
+        <a href="#layanan" class="btn btn-primary">Hubungi Saya</a>
+      </div>
+
+      <!-- ASIDE: info singkat, berhubungan tidak langsung dengan konten utama -->
+      <aside class="about-aside" aria-label="Info singkat">
+        <h2>Info Singkat</h2>
+        <dl class="info-list">
+          <dt>NIM</dt>
+          <dd>12S24051</dd>
+          <dt>Program Studi</dt>
+          <dd>S1 Sistem Informasi</dd>
+          <dt>Domisili</dt>
+          <dd>Toba Samosir, Sumatera Utara</dd>
+          <dt>Email</dt>
+          <dd>iss24051@students.del.ac.id</dd>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- ================= SECTION 2: PORTOFOLIO KARYA ================= -->
+    <section id="portofolio" class="section section-portfolio">
+      <h2 class="section-title">Portofolio Karya</h2>
+      <p class="section-desc">Rekap pengalaman dan proyek yang sudah saya kerjakan.</p>
+
+      <!-- TABLE SEMANTIK: caption, thead, tbody, tfoot, scope -->
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Riwayat Pengalaman &amp; Proyek</caption>
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Nama Proyek / Pengalaman</th>
+              <th scope="col">Teknologi</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Front-End Engineer Intern — Pertamina Patra Niaga Sumbagut</td>
+              <td>HTML, CSS, JavaScript, Data Visualization</td>
+              <td><span class="status status-done">Selesai</span></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>ImunKu — Aplikasi Imunisasi Anak (UI/UX End-to-End)</td>
+              <td>Figma, UX Research, Usability Testing</td>
+              <td><span class="status status-done">Selesai</span></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>SIIR — Sistem Informasi Izin Ruangan</td>
+              <td>Analisis &amp; Perancangan Sistem</td>
+              <td><span class="status status-done">Selesai</span></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Portofolio Pribadi (tugas ini)</td>
+              <td>HTML5, CSS3, Git</td>
+              <td><span class="status status-progress">Berjalan</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total proyek tercatat</td>
+              <td>4</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-block">
+          <h3>Keahlian Teknis</h3>
+          <!-- UL: daftar tanpa urutan -->
+          <ul class="tag-list">
+            <li>HTML5 Semantik</li>
+            <li>Modern CSS (Flexbox &amp; Grid)</li>
+            <li>UI/UX Design (Figma)</li>
+            <li>Data Analytics</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+        <div class="skills-block">
+          <h3>Langkah Belajar Saya</h3>
+          <!-- OL: daftar berurutan -->
+          <ol class="step-list">
+            <li>Belajar struktur HTML semantik</li>
+            <li>Menata tampilan dengan CSS modern</li>
+            <li>Membangun formulir yang accessible</li>
+            <li>Deploy proyek ke GitHub Pages</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ARTICLE: setiap kartu adalah konten mandiri yang bisa berdiri sendiri -->
+      <div class="highlights">
+        <h3>Sorotan Proyek</h3>
+        <div class="highlight-grid">
+          <article class="highlight-card">
+            <h4>Dashboard Monitoring Jaringan</h4>
+            <p>Selama magang di Pertamina Patra Niaga Sumbagut, saya mengelola data untuk membangun dashboard yang memantau kondisi jaringan secara real-time.</p>
+          </article>
+          <article class="highlight-card">
+            <h4>ImunKu — Aplikasi Imunisasi Anak</h4>
+            <p>Merancang pengalaman pengguna aplikasi pengingat imunisasi anak, mulai dari riset kebutuhan hingga pengujian usability.</p>
+          </article>
+          <article class="highlight-card">
+            <h4>SIIR — Izin Ruangan</h4>
+            <p>Sistem yang memudahkan mahasiswa melihat ketersediaan ruangan, mengajukan izin pakai, dan memantau status persetujuan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: FORMULIR LAYANAN ================= -->
+    <section id="layanan" class="section section-form">
+      <h2 class="section-title">Formulir Konsultasi</h2>
+      <p class="section-desc">Punya pertanyaan seputar proyek kuliah? Isi formulir berikut.</p>
+
+      <form class="custom-form" action="#" method="POST">
+
+        <fieldset class="form-fieldset">
+          <legend>Data Identitas</legend>
+
+          <div class="form-group">
+            <label for="nama">Nama Lengkap <span class="req">*</span></label>
+            <input type="text" id="nama" name="nama" required placeholder="Nama kamu">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required
+                   aria-describedby="email-help" placeholder="nama@email.com">
+            <small id="email-help" class="form-help">Gunakan email aktif agar mudah dihubungi.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="telepon">Nomor Telepon</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+          </div>
+
+          <div class="form-group">
+            <label for="usia">Usia</label>
+            <input type="number" id="usia" name="usia" min="15" max="60">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+          <legend>Detail Permintaan</legend>
+
+          <div class="form-group">
+            <label for="topik">Topik Konsultasi</label>
+            <select id="topik" name="topik">
+              <option value="frontend">Frontend &amp; UI/UX</option>
+              <option value="backend">Backend</option>
+              <option value="data">Data Analytics</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="group-label" id="jenis-label">Jenis Layanan</span>
+            <div class="radio-row" role="group" aria-labelledby="jenis-label">
+              <div class="option-item">
+                <input type="radio" id="jenis-konsultasi" name="jenis" value="konsultasi" checked>
+                <label for="jenis-konsultasi">Konsultasi</label>
+              </div>
+              <div class="option-item">
+                <input type="radio" id="jenis-review" name="jenis" value="review">
+                <label for="jenis-review">Review Kode</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <span class="group-label" id="kontak-label">Preferensi Kontak</span>
+            <div class="checkbox-row" role="group" aria-labelledby="kontak-label">
+              <div class="option-item">
+                <input type="checkbox" id="kontak-email" name="kontak" value="email">
+                <label for="kontak-email">Email</label>
+              </div>
+              <div class="option-item">
+                <input type="checkbox" id="kontak-wa" name="kontak" value="wa">
+                <label for="kontak-wa">WhatsApp</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan <span class="req">*</span></label>
+            <textarea id="pesan" name="pesan" rows="4" required
+                      placeholder="Tuliskan pertanyaan atau kebutuhan kamu"></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Kirim Permintaan</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Geralda Natali Gultom. Dibuat untuk Mata Kuliah Pemrograman dan Pengujian Aplikasi Web.</p>
+    <nav class="footer-nav" aria-label="Navigasi footer">
+      <a href="#tentang">Tentang</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#layanan">Kontak</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

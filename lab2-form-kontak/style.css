@@ -1,0 +1,50 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", -apple-system, sans-serif;
+  background: #f0f6f4;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-title { font-family: "Sora", sans-serif; }
+
+.custom-form {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #e7e2d8;
+  box-shadow: 0 10px 25px -8px rgba(43, 42, 40, 0.12);
+}
+
+.form-title { font-size: 18px; margin-bottom: 6px; color: #0f172a; }
+.form-desc { font-size: 13px; color: #756f66; margin-bottom: 20px; }
+
+.form-fieldset { border: 1px solid #cbd5e1; border-radius: 10px; padding: 16px 18px; margin-bottom: 18px; }
+.form-legend { font-size: 12.5px; font-weight: 700; color: #1f6f5c; padding: 0 8px; }
+
+.form-group { margin-bottom: 14px; }
+.form-label { display: block; font-size: 13px; font-weight: 600; color: #1e293b; margin-bottom: 5px; }
+.req { color: #d94f4f; }
+
+.form-control {
+  width: 100%; padding: 9px 13px; font-size: 13.5px;
+  border: 1.5px solid #cbd5e1; border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-control:focus {
+  outline: none; border-color: #1f6f5c;
+  box-shadow: 0 0 0 3.5px rgba(31, 111, 92, 0.18);
+}
+
+.form-help { display: block; font-size: 11px; color: #756f66; margin-top: 4px; }
+
+.btn-submit {
+  width: 100%; background: #1f6f5c; color: #ffffff; border: none;
+  padding: 12px; font-size: 14px; font-weight: 600; border-radius: 8px;
+  cursor: pointer; transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-submit:hover { background: #17594a; box-shadow: 0 4px 12px rgba(31, 111, 92, 0.3); }
