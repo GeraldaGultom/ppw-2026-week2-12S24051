@@ -1,0 +1,14 @@
+{
+  "name": "Geralda Natali Gultom",
+  "nim": "12S24051",
+  "program": "S1 Sistem Informasi",
+  "email": "iss24051@students.del.ac.id",
+  "domicile": "Toba Samosir, Sumatera Utara",
+  "photo": "foto-profil.jpg",
+  "bio": "Saya mahasiswa Sistem Informasi dengan ketertarikan besar pada software engineering dan data analytics. Halaman ini merupakan portofolio yang telah dimodernisasi menjadi arsitektur dinamis berbasis JSON.",
+  "stats": {
+    "projects": 4,
+    "internships": 1,
+    "accessibility": "100%"
+  }
+}

@@ -4,257 +4,206 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geralda Natali Gultom — Portofolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <div class="logo">Geralda<span>.dev</span></div>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#portofolio">Portofolio</a></li>
-        <li><a href="#layanan">Kontak</a></li>
-      </ul>
+  <!--  HEADER + NAVBAR  -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm py-3 navbar-custom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#tentang">Geralda<span class="text-accent-light">.dev</span></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto gap-lg-3">
+            <li class="nav-item"><a class="nav-link active" href="#tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#layanan">
+                Pesanan
+                <span id="orderBadge" class="badge rounded-pill bg-danger d-none">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main class="page">
+  <main>
+    <!--  HERO / TENTANG SAYA (DINAMIS) \\ -->
+    <section id="tentang" class="hero-section py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-4">
 
-    <!-- ================= SECTION 1: TENTANG SAYA ================= -->
-    <section id="tentang" class="section section-about">
-
-      <!-- KARTU FOTO PROFIL (gaya Lab 1, warna disamakan) -->
-      <div class="about-photo">
-        <div class="photo-banner"></div>
-        <div class="avatar-wrap">
-          <img src="foto-profil.jpg" alt="Foto Geralda Natali Gultom" class="avatar-img">
-          <span class="status-badge">Aktif</span>
-        </div>
-      </div>
-
-      <div class="about-text">
-        <p class="eyebrow">Mahasiswa S1 Sistem Informasi</p>
-        <h1>Halo, saya Geralda Natali Gultom</h1>
-        <p class="lead">
-          Saya mahasiswa Sistem Informasi dengan ketertarikan besar pada software engineering
-          dan data analytics. Saya senang mengubah data mentah menjadi insight yang berguna,
-          dan mengubah kebutuhan pengguna menjadi produk digital yang benar-benar terpakai.
-        </p>
-        <a href="#layanan" class="btn btn-primary">Hubungi Saya</a>
-      </div>
-
-      <!-- ASIDE: info singkat, berhubungan tidak langsung dengan konten utama -->
-      <aside class="about-aside" aria-label="Info singkat">
-        <h2>Info Singkat</h2>
-        <dl class="info-list">
-          <dt>NIM</dt>
-          <dd>12S24051</dd>
-          <dt>Program Studi</dt>
-          <dd>S1 Sistem Informasi</dd>
-          <dt>Domisili</dt>
-          <dd>Toba Samosir, Sumatera Utara</dd>
-          <dt>Email</dt>
-          <dd>iss24051@students.del.ac.id</dd>
-        </dl>
-      </aside>
-    </section>
-
-    <!-- ================= SECTION 2: PORTOFOLIO KARYA ================= -->
-    <section id="portofolio" class="section section-portfolio">
-      <h2 class="section-title">Portofolio Karya</h2>
-      <p class="section-desc">Rekap pengalaman dan proyek yang sudah saya kerjakan.</p>
-
-      <!-- TABLE SEMANTIK: caption, thead, tbody, tfoot, scope -->
-      <div class="table-wrap">
-        <table class="data-table">
-          <caption>Riwayat Pengalaman &amp; Proyek</caption>
-          <thead>
-            <tr>
-              <th scope="col">No</th>
-              <th scope="col">Nama Proyek / Pengalaman</th>
-              <th scope="col">Teknologi</th>
-              <th scope="col">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Front-End Engineer Intern — Pertamina Patra Niaga Sumbagut</td>
-              <td>HTML, CSS, JavaScript, Data Visualization</td>
-              <td><span class="status status-done">Selesai</span></td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>ImunKu — Aplikasi Imunisasi Anak (UI/UX End-to-End)</td>
-              <td>Figma, UX Research, Usability Testing</td>
-              <td><span class="status status-done">Selesai</span></td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>SIIR — Sistem Informasi Izin Ruangan</td>
-              <td>Analisis &amp; Perancangan Sistem</td>
-              <td><span class="status status-done">Selesai</span></td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Portofolio Pribadi (tugas ini)</td>
-              <td>HTML5, CSS3, Git</td>
-              <td><span class="status status-progress">Berjalan</span></td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="3">Total proyek tercatat</td>
-              <td>4</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skills-block">
-          <h3>Keahlian Teknis</h3>
-          <!-- UL: daftar tanpa urutan -->
-          <ul class="tag-list">
-            <li>HTML5 Semantik</li>
-            <li>Modern CSS (Flexbox &amp; Grid)</li>
-            <li>UI/UX Design (Figma)</li>
-            <li>Data Analytics</li>
-            <li>Git &amp; GitHub</li>
-          </ul>
-        </div>
-        <div class="skills-block">
-          <h3>Langkah Belajar Saya</h3>
-          <!-- OL: daftar berurutan -->
-          <ol class="step-list">
-            <li>Belajar struktur HTML semantik</li>
-            <li>Menata tampilan dengan CSS modern</li>
-            <li>Membangun formulir yang accessible</li>
-            <li>Deploy proyek ke GitHub Pages</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- ARTICLE: setiap kartu adalah konten mandiri yang bisa berdiri sendiri -->
-      <div class="highlights">
-        <h3>Sorotan Proyek</h3>
-        <div class="highlight-grid">
-          <article class="highlight-card">
-            <h4>Dashboard Monitoring Jaringan</h4>
-            <p>Selama magang di Pertamina Patra Niaga Sumbagut, saya mengelola data untuk membangun dashboard yang memantau kondisi jaringan secara real-time.</p>
-          </article>
-          <article class="highlight-card">
-            <h4>ImunKu — Aplikasi Imunisasi Anak</h4>
-            <p>Merancang pengalaman pengguna aplikasi pengingat imunisasi anak, mulai dari riset kebutuhan hingga pengujian usability.</p>
-          </article>
-          <article class="highlight-card">
-            <h4>SIIR — Izin Ruangan</h4>
-            <p>Sistem yang memudahkan mahasiswa melihat ketersediaan ruangan, mengajukan izin pakai, dan memantau status persetujuan.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= SECTION 3: FORMULIR LAYANAN ================= -->
-    <section id="layanan" class="section section-form">
-      <h2 class="section-title">Formulir Konsultasi</h2>
-      <p class="section-desc">Punya pertanyaan seputar proyek kuliah? Isi formulir berikut.</p>
-
-      <form class="custom-form" action="#" method="POST">
-
-        <fieldset class="form-fieldset">
-          <legend>Data Identitas</legend>
-
-          <div class="form-group">
-            <label for="nama">Nama Lengkap <span class="req">*</span></label>
-            <input type="text" id="nama" name="nama" required placeholder="Nama kamu">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email <span class="req">*</span></label>
-            <input type="email" id="email" name="email" required
-                   aria-describedby="email-help" placeholder="nama@email.com">
-            <small id="email-help" class="form-help">Gunakan email aktif agar mudah dihubungi.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="telepon">Nomor Telepon</label>
-            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
-          </div>
-
-          <div class="form-group">
-            <label for="usia">Usia</label>
-            <input type="number" id="usia" name="usia" min="15" max="60">
-          </div>
-        </fieldset>
-
-        <fieldset class="form-fieldset">
-          <legend>Detail Permintaan</legend>
-
-          <div class="form-group">
-            <label for="topik">Topik Konsultasi</label>
-            <select id="topik" name="topik">
-              <option value="frontend">Frontend &amp; UI/UX</option>
-              <option value="backend">Backend</option>
-              <option value="data">Data Analytics</option>
-              <option value="lainnya">Lainnya</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <span class="group-label" id="jenis-label">Jenis Layanan</span>
-            <div class="radio-row" role="group" aria-labelledby="jenis-label">
-              <div class="option-item">
-                <input type="radio" id="jenis-konsultasi" name="jenis" value="konsultasi" checked>
-                <label for="jenis-konsultasi">Konsultasi</label>
-              </div>
-              <div class="option-item">
-                <input type="radio" id="jenis-review" name="jenis" value="review">
-                <label for="jenis-review">Review Kode</label>
+          <div class="col-lg-3 text-center">
+            <div class="profile-photo-card mx-auto">
+              <div class="photo-banner"></div>
+              <div class="avatar-wrap mx-auto">
+                <img id="profilePhoto" src="" alt="Foto Profil" class="avatar-img">
+                <span class="badge status-badge">Aktif</span>
               </div>
             </div>
           </div>
 
-          <div class="form-group">
-            <span class="group-label" id="kontak-label">Preferensi Kontak</span>
-            <div class="checkbox-row" role="group" aria-labelledby="kontak-label">
-              <div class="option-item">
-                <input type="checkbox" id="kontak-email" name="kontak" value="email">
-                <label for="kontak-email">Email</label>
+          <div class="col-lg-6">
+            <p class="eyebrow fw-semibold mb-2">Mahasiswa S1 Sistem Informasi</p>
+            <h1 id="profileName" class="display-6 fw-bold mb-3">Memuat...</h1>
+            <p id="profileBio" class="lead text-muted mb-4">Memuat data profil...</p>
+            <a href="#layanan" class="btn btn-primary btn-lg">
+              <i class="bi bi-send me-1"></i> Hubungi Saya
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <aside class="card border-0 shadow-sm info-card" aria-label="Info singkat">
+              <div class="card-body">
+                <h2 class="h6 fw-bold mb-3">Info Singkat</h2>
+                <dl class="mb-0 small">
+                  <dt class="text-muted text-uppercase">NIM</dt>
+                  <dd id="profileNim" class="fw-semibold">-</dd>
+                  <dt class="text-muted text-uppercase mt-2">Program Studi</dt>
+                  <dd id="profileProgram" class="fw-semibold">-</dd>
+                  <dt class="text-muted text-uppercase mt-2">Email</dt>
+                  <dd id="profileEmail" class="fw-semibold mb-0">-</dd>
+                </dl>
               </div>
-              <div class="option-item">
-                <input type="checkbox" id="kontak-wa" name="kontak" value="wa">
-                <label for="kontak-wa">WhatsApp</label>
-              </div>
+            </aside>
+
+            <div class="row text-center mt-3 g-2">
+              <div class="col-4"><div class="stat-box"><strong id="statProjects">-</strong><br><small>Proyek</small></div></div>
+              <div class="col-4"><div class="stat-box"><strong id="statInternships">-</strong><br><small>Magang</small></div></div>
+              <div class="col-4"><div class="stat-box"><strong id="statA11y">-</strong><br><small>A11y</small></div></div>
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="pesan">Pesan <span class="req">*</span></label>
-            <textarea id="pesan" name="pesan" rows="4" required
-                      placeholder="Tuliskan pertanyaan atau kebutuhan kamu"></textarea>
-          </div>
-        </fieldset>
-
-        <button type="submit" class="btn-submit">Kirim Permintaan</button>
-      </form>
+        </div>
+      </div>
     </section>
 
+    <!--  PORTOFOLIO: DINAMIS DARI JSON  -->
+    <section id="portofolio" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="fw-bold">Portofolio Karya</h2>
+        <p class="text-muted mb-4">Rekap pengalaman dan proyek, dimuat otomatis dari data JSON.</p>
+
+        <!-- Diisi JS: badge keahlian -->
+        <ul id="skillBadges" class="list-inline mb-4"></ul>
+
+        <!-- Diisi JS: tombol filter kategori -->
+        <div id="categoryFilters" class="d-flex flex-wrap gap-2 mb-4"></div>
+
+        <!-- Diisi JS: kartu proyek (LOADING / SUCCESS / EMPTY / ERROR state) -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="projectGrid"></div>
+      </div>
+
+      <!-- UNIVERSAL MODAL: 1 elemen untuk SEMUA proyek -->
+      <div class="modal fade" id="universalProjectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title fw-bold" id="projectModalTitle">Judul Proyek</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4" id="projectModalBody">
+              <!-- Diinjeksi dinamis oleh app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  LAYANAN: DINAMIS DARI JSON  -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="fw-bold">Paket Layanan</h2>
+        <p class="text-muted mb-4">Katalog layanan konsultasi, dimuat otomatis dari data JSON.</p>
+        <div class="row g-4" id="serviceGrid"></div>
+      </div>
+    </section>
+
+    <!--  FORMULIR: ASYNC + LOCALSTORAGE  -->
+    <section id="layanan" class="py-5 bg-light">
+      <div class="container" style="max-width: 700px;">
+        <h2 class="fw-bold">Formulir Konsultasi</h2>
+        <p class="text-muted mb-4">Dikirim secara asinkron tanpa reload halaman.</p>
+
+        <form id="consultForm" class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingNama" name="nama" placeholder="Nama" required>
+                <label for="floatingNama"><i class="bi bi-person me-1"></i> Nama Lengkap *</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="nama@email.com" required>
+                <label for="floatingEmail"><i class="bi bi-envelope me-1"></i> Email *</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="teleponInput" class="form-label small text-muted">Nomor Telepon</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                <input type="tel" class="form-control" id="teleponInput" name="telepon" placeholder="08xxxxxxxxxx">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="kategoriSelect" class="form-label small text-muted">Topik Konsultasi</label>
+              <select class="form-select" id="kategoriSelect" name="kategori">
+                <option selected>Frontend & UI/UX</option>
+                <option>Backend</option>
+                <option>Data Analytics</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea class="form-control" id="floatingPesan" name="pesan" style="height: 110px" placeholder="Pesan" required></textarea>
+                <label for="floatingPesan"><i class="bi bi-chat-dots me-1"></i> Pesan *</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">
+                <i class="bi bi-send-check me-1"></i> Kirim Permintaan
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <p>&copy; 2026 Geralda Natali Gultom. Dibuat untuk Mata Kuliah Pemrograman dan Pengujian Aplikasi Web.</p>
-    <nav class="footer-nav" aria-label="Navigasi footer">
-      <a href="#tentang">Tentang</a>
-      <a href="#portofolio">Portofolio</a>
-      <a href="#layanan">Kontak</a>
-    </nav>
+  <!--  TOAST NOTIFICATION  -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="notifToast" class="toast" role="alert">
+      <div class="toast-header">
+        <strong class="me-auto" id="toastTitle">Notifikasi</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body" id="toastBody"></div>
+    </div>
+  </div>
+
+  <!--  FOOTER  -->
+  <footer class="text-center py-4 footer-custom">
+    <p class="mb-1">&copy; 2026 Geralda Natali Gultom. Dibuat untuk Mata Kuliah Pemrograman dan Pengujian Aplikasi Web.</p>
+    <small class="text-white-50">Arsitektur Dynamic CSR — Minggu 4</small>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- PENTING: api-service.js dimuat SEBELUM app.js, karena app.js memakai ApiService -->
+  <script src="js/api-service.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

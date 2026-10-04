@@ -1,0 +1,23 @@
+[
+  {
+    "id": "konsultasi",
+    "name": "Konsultasi Singkat",
+    "duration": "30 Menit",
+    "description": "Diskusi cepat seputar arah proyek atau pemecahan masalah teknis.",
+    "features": ["Tanya jawab fokus", "Rekomendasi langkah berikut"]
+  },
+  {
+    "id": "review",
+    "name": "Review Kode",
+    "duration": "60 Menit",
+    "description": "Peninjauan kode proyek kuliah untuk perbaikan struktur dan praktik terbaik.",
+    "features": ["Review HTML/CSS/JS", "Catatan perbaikan tertulis"]
+  },
+  {
+    "id": "pendampingan",
+    "name": "Pendampingan Proyek",
+    "duration": "Beberapa Sesi",
+    "description": "Pendampingan berkelanjutan dari perencanaan hingga deployment proyek.",
+    "features": ["Sesi berkala", "Bantuan debugging", "Review sebelum submit"]
+  }
+]
