@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Dashboard Monitoring Jaringan",
+    "category": "Data Visualization",
+    "tags": ["JavaScript", "Data Viz"],
+    "thumbnail": "https://placehold.co/500x280/1f6f5c/ffffff?text=Dashboard+Monitoring",
+    "description": "Front-End Engineer Intern di Pertamina Patra Niaga Sumbagut — mengelola data untuk membangun dashboard monitoring jaringan yang memantau kondisi jaringan secara real-time.",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "ImunKu - Aplikasi Imunisasi Anak",
+    "category": "UI/UX",
+    "tags": ["Figma", "UX Research"],
+    "thumbnail": "https://placehold.co/500x280/0284c7/ffffff?text=ImunKu",
+    "description": "Proyek UI/UX end-to-end untuk aplikasi pengingat jadwal imunisasi anak, mulai dari riset kebutuhan hingga usability testing dengan calon pengguna.",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "SIIR - Sistem Informasi Izin Ruangan",
+    "category": "Analisis Sistem",
+    "tags": ["Analisis", "Perancangan"],
+    "thumbnail": "https://placehold.co/500x280/9333ea/ffffff?text=SIIR",
+    "description": "Sistem yang memudahkan mahasiswa melihat ketersediaan ruangan kampus, mengajukan izin pemakaian, serta memantau status persetujuan permohonan.",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "title": "Portofolio Pribadi",
+    "category": "Web Development",
+    "tags": ["HTML5", "Bootstrap 5", "JavaScript"],
+    "thumbnail": "https://placehold.co/500x280/d97706/ffffff?text=Portofolio",
+    "description": "Halaman ini sendiri — dimulai dari HTML/CSS murni, dimodernisasi dengan Bootstrap 5, dan kini direfaktor menjadi arsitektur dinamis berbasis JSON dan JavaScript ES6+.",
+    "link": "#"
+  }
+]

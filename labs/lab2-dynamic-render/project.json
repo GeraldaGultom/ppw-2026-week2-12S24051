@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Dashboard Monitoring Jaringan",
+    "category": "Data Visualization",
+    "thumbnail": "https://via.placeholder.com/400x200/1f6f5c/ffffff?text=Dashboard",
+    "description": "Mengelola data untuk membangun dashboard monitoring jaringan real-time."
+  },
+  {
+    "id": 2,
+    "title": "ImunKu - Aplikasi Imunisasi Anak",
+    "category": "UI/UX",
+    "thumbnail": "https://via.placeholder.com/400x200/0284c7/ffffff?text=ImunKu",
+    "description": "Riset kebutuhan pengguna hingga usability testing aplikasi imunisasi."
+  }
+]
